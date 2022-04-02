@@ -22,11 +22,13 @@ const users = [
   { id: "9", name: "Daniel Cane", age: 51, hasDog: true },
 ];
 
+// 1.
 function filterDogOwners(users) {
   return users.filter((usersObj) => usersObj.hasDog === true);
 }
 const dogOwners = filterDogOwners(users);
 
+// 2.
 function filterAdults(users) {
   return users.filter((usersObj) => usersObj.age >= 18);
 }

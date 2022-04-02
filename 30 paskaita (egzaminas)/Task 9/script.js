@@ -24,5 +24,5 @@ class Movie {
   }
 }
 
-const newMovie = new Movie("Zero", "Emilis Velyvis", 100000001);
+const newMovie = new Movie("The Godfather", "Francis Ford Coppola", 100000001);
 // console.log(newMovie.wasExpensive());
