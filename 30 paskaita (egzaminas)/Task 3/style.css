@@ -64,6 +64,7 @@
 #output {
   display: grid;
   grid-template-columns: repeat(4, 22em);
+  
   }
 
 .user-card {
