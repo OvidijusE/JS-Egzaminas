@@ -31,7 +31,7 @@ function renderData(dataArr, dest) {
         `
       <div class="user-card">
       <p class="login">Login : ${dataObj.login}</p>
-      <img class="avatar" src="${dataObj.avatar_url}" alt="" />
+      <img class="avatar" src="${dataObj.avatar_url}" alt="profile-img" />
       </div>
       `
     )
