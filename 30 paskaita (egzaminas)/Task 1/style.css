@@ -52,6 +52,23 @@ form {
   color: #fff;
 }
 
+#output {
+  max-width: 30%;
+  margin : 0 auto;
+}
+
+.output-p {
+  
+  border-bottom: 1px solid grey;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+  
+}
+
+.top-p {
+  border-top: 1px solid grey;
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   .headline {
