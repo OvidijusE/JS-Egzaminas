@@ -34,11 +34,9 @@ function showCars(carObj) {
   divEl.className = "cars-card";
   divEl.innerHTML = `
   
-  
   <h3 class="car-brand">${carObj.brand}</h3>
-  <p class="car-models">${carObj.models.join(" ")}</p>
-  
-      `;
+  <p class="car-models">${carObj.models.join(", ")}.</p>
+          `;
 
   return divEl;
 }
