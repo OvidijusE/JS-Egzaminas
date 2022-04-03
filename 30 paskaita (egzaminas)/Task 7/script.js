@@ -18,3 +18,4 @@ function showObjectKeys(audi) {
 }
 
 const objKeys = showObjectKeys(audi);
+// console.log("objKeys ===", objKeys);

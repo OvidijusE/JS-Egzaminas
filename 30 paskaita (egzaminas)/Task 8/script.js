@@ -34,7 +34,7 @@ function Calculator() {
 
 let calculator = new Calculator();
 
-console.log(calculator.sum(1, 8));
-console.log(calculator.subtraction(10, 8));
-console.log(calculator.multiplication(5, 12));
-console.log(calculator.division(5, 2));
+// console.log(calculator.sum(1, 8));
+// console.log(calculator.subtraction(10, 8));
+// console.log(calculator.multiplication(5, 12));
+// console.log(calculator.division(5, 2));

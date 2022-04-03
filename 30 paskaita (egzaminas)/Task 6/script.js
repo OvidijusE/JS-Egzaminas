@@ -24,11 +24,13 @@ const users = [
 function getUserAverageAge(array) {
   return array.reduce((total, userObj) => total + userObj.age / array.length, 0).toFixed(2);
 }
-const userAverageAge = getUserAverageAge(users);
+const averageAge = getUserAverageAge(users);
+// console.log("averageAge ===", averageAge);
 
 // 2.
 function getUsersNames(array) {
   return array.map((userObj) => userObj.name);
 }
 
-const usersArray = getUsersNames(users);
+const usersNames = getUsersNames(users);
+// console.log("usersNames ===", usersNames);
