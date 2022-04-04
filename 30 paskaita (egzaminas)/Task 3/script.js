@@ -18,9 +18,16 @@ const buttonEl = document.getElementById("btn");
 const outputEl = document.getElementById("output");
 
 async function getUsersData() {
-  const resp = await fetch(ENDPOINT);
-  const props = await resp.json();
-  buttonEl.addEventListener("click", () => renderData(props, outputEl));
+  try {
+    const resp = await fetch(ENDPOINT);
+    if (!resp.ok) {
+      throw new Error(`Error: ${resp.status}`);
+    }
+    const props = await resp.json();
+    buttonEl.addEventListener("click", () => renderData(props, outputEl));
+  } catch (error) {
+    throw new Error(`Could not get users: ${error}`);
+  }
 }
 getUsersData();
 

@@ -12,7 +12,6 @@ function Calculator() {
   this.sum = function (num1, num2) {
     return num1 + num2;
   };
-
   this.subtraction = function (num1, num2) {
     return num1 - num2;
   };

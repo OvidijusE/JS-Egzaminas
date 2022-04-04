@@ -16,9 +16,16 @@ const ENDPOINT = "cars.json";
 const outputEl = document.getElementById("output");
 
 async function getCars() {
-  const resp = await fetch(ENDPOINT);
-  const data = await resp.json();
-  renderCars(data, outputEl);
+  try {
+    const resp = await fetch(ENDPOINT);
+    if (!resp.ok) {
+      throw new Error(`Error: ${resp.status}`);
+    }
+    const data = await resp.json();
+    renderCars(data, outputEl);
+  } catch (error) {
+    throw new Error(`Could not get cars: ${error}`);
+  }
 }
 getCars();
 
