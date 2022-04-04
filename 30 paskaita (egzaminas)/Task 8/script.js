@@ -10,31 +10,28 @@ division() - priima du skaičius ir grąžina jų dalybos rezultatą;
 
 function Calculator() {
   this.sum = function (num1, num2) {
-    this.num1 = num1;
-    this.num2 = num2;
-    return this.num1 + this.num2;
+    return num1 + num2;
   };
 
   this.subtraction = function (num1, num2) {
-    this.num1 = num1;
-    this.num2 = num2;
-    return this.num1 - this.num2;
+    return num1 - num2;
   };
   this.multiplication = function (num1, num2) {
-    this.num1 = num1;
-    this.num2 = num2;
-    return this.num1 * this.num2;
+    return num1 * num2;
   };
   this.division = function (num1, num2) {
-    this.num1 = num1;
-    this.num2 = num2;
-    return this.num1 / this.num2;
+    return num1 / num2;
   };
 }
 
 let calculator = new Calculator();
 
-// console.log(calculator.sum(1, 8));
-// console.log(calculator.subtraction(10, 8));
-// console.log(calculator.multiplication(5, 12));
-// console.log(calculator.division(5, 2));
+const sum = calculator.sum(1, 8);
+const subtraction = calculator.subtraction(10, 8);
+const multiplication = calculator.multiplication(5, 12);
+const division = calculator.division(5, 2);
+
+// console.log("sum ===", sum);
+// console.log("subtraction ===", subtraction);
+// console.log("multiplication ===", multiplication);
+// console.log("division ===", division);
