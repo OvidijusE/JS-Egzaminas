@@ -59,3 +59,22 @@
   border-radius: 5px;
   background-color: #fff;
 }
+
+
+#output {
+  display: grid;
+  grid-template-columns: repeat(4, 22em);
+}
+
+.user-card {
+margin: 1%;
+}
+
+.login{
+  margin-bottom : 1%;
+}
+
+.avatar {
+  width: -webkit-fill-available;
+  border-radius: 1.5%;
+}
