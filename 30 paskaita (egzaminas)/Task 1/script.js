@@ -20,9 +20,9 @@ formEl.addEventListener("submit", (e) => {
 
   function calcWeight() {
     outputEl.innerHTML = `
-    <p class="output-p top-p">Jūsų svoris svarais : ${(inputEl.value * 2.2046).toFixed(2)} lb</p>
-    <p class="output-p">Jūsų svoris gramais : ${(inputEl.value / 0.001).toFixed(2)} g</p>
-    <p class="output-p">Jūsų svoris uncijomis : ${(inputEl.value * 35.274).toFixed(2)} oz</p>
+    <p class="output-p">Your weight in pounds : ${(inputEl.value * 2.2046).toFixed(2)} lb.</p>
+    <p class="output-p">Your weight in grams : ${(inputEl.value / 0.001).toFixed(2)} g.</p>
+    <p class="output-p">Your weight in ounces : ${(inputEl.value * 35.274).toFixed(2)} oz.</p>
     `;
   }
   calcWeight();

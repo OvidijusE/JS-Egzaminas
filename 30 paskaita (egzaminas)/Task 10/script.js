@@ -16,7 +16,7 @@ let b = division(four, two);
 let c = substraction(three, two);
 let d = multiplication(five, two);
 
-// console.log(a);
-// console.log(b);
-// console.log(c);
-// console.log(d);
+// console.log("a ===", a);
+// console.log("b ===", b);
+// console.log("c ===", c);
+// console.log("d ===", d);

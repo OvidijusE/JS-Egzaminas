@@ -23,8 +23,8 @@ async function getUsersData() {
     if (!resp.ok) {
       throw new Error(`Error: ${resp.status}`);
     }
-    const props = await resp.json();
-    buttonEl.addEventListener("click", () => renderData(props, outputEl));
+    const data = await resp.json();
+    buttonEl.addEventListener("click", () => renderData(data, outputEl));
   } catch (error) {
     throw new Error(`Could not get users: ${error}`);
   }
